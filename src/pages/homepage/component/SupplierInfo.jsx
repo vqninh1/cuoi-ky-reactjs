@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import elmich from '../img_homepage/elmich.png'
 import mall from '../img_homepage/mall.png'
-// import pressure_cooker1 from '../img_homepage/pressure_cooker1.png'
-// import pressure_cooker2 from '../img_homepage/pressure_cooker2.png'
-// import pot_set from '../img_homepage/pot_set.png'
-// import knife from '../img_homepage/knife.png'
-// import thermos_bottle from '../img_homepage/thermos_bottle.png'
-// import premium_knife from '../img_homepage/premium_knife.png'
+import pressure_cooker1 from '../img_homepage/pressure_cooker1.png'
+import pressure_cooker2 from '../img_homepage/pressure_cooker2.png'
+import pot_set from '../img_homepage/pot_set.png'
+import knife from '../img_homepage/knife.png'
+import thermos_bottle from '../img_homepage/thermos_bottle.png'
+import premium_knife from '../img_homepage/premium_knife.png'
 import { HiStar } from 'react-icons/hi'
 import { TbHeartPlus } from 'react-icons/tb'
 import { BsShopWindow } from 'react-icons/bs'
@@ -19,17 +19,7 @@ import { getPhones } from '../../../service/phone.service'
 const SupplierInfo = () => {
     const [phones, setPhones] = useState([]);
     const arr = [
-        'http://localhost:3000/static/media/pressure_cooker1.e9ef36d9ea7659835e37.png',
-
-        "http://localhost:3000/static/media/pressure_cooker2.b5c4dee296dde88f2572.png",
-
-        "http://localhost:3000/static/media/pot_set.a0f0fd42bf3a041397d0.png",
-
-        "http://localhost:3000/static/media/knife.7a77246b1d33214ef5ac.png",
-
-        "http://localhost:3000/static/media/thermos_bottle.2a0e197cb7badf354fdc.png",
-
-        "http://localhost:3000/static/media/premium_knife.2fe84313b571859f97ee.png"
+        pressure_cooker1, pressure_cooker2, pot_set, knife, thermos_bottle, premium_knife
     ];
     useEffect((() => {
         getPhones().then((data) => {
